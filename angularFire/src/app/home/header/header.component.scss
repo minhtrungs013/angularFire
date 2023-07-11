@@ -1,0 +1,108 @@
+.header {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.bg {
+    background-color: #FFF9F3;
+
+}
+
+.header__left--logo {
+    color: #f85c08;
+    font-weight: 500;
+}
+
+.header__left {
+    text-align: left;
+}
+
+.header__center {
+    position: relative;
+
+}
+
+.header__input {
+    outline: none;
+    padding: 8px 140px;
+    border-radius: 20px;
+    display: block;
+    border: 1px solid #f3f3f3;
+    width: 96%;
+}
+
+.header__button {
+    position: absolute;
+    background: rgb(232, 232, 230);
+    border-radius: 20px;
+    padding: 3px 10px;
+    left: 6px;
+    top: 6px;
+    border: none;
+    cursor: pointer;
+    color: #6b6a6a;
+
+}
+
+.header__search {
+    position: absolute;
+    right: 50px;
+    font-size: 18px;
+    top: 10px;
+    color: #6b6868;
+}
+
+.header__rigth {
+    display: flex;
+}
+
+
+.header__rigth-button {
+    background: rgb(249, 90, 10);
+    border-radius: 20px;
+    padding: 7px 20px;
+    border: none;
+    cursor: pointer;
+    color: #fdfafa;
+}
+
+.header__account {
+    display: flex;
+    margin-left: 20px;
+}
+
+.header__account-icon {
+    color: #e31818;
+    font-size: 16px;
+    width: 30px;
+    display: flex;
+    margin-top: 7px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.header__account p {
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #6b6868;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    padding-bottom: 15px;
+}
+
+.navbar__item {
+    text-align: left;
+    cursor: pointer;
+}
+
+.navbar__item--text {
+    display: block;
+    color: #615f5f;
+    font-weight: 500;
+}
+.navbar__item--text:hover {
+    color: #f7701d;
+}

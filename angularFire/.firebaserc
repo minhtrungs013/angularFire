@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "angularfire-c1831"
+  },
+  "targets": {
+    "angularfire-c1831": {
+      "hosting": {
+        "angularFire": [
+          "angularfire-c1831"
+        ]
+      }
+    }
+  }
+}

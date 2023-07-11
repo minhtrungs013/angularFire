@@ -1,0 +1,43 @@
+<div nz-row class="bg">
+    <div nz-col [nzSpan]="16" nzOffset="4" class="header">
+        <div nz-row>
+            <div nz-col [nzSpan]="4">
+                <div class="header__left">
+                    <h2 class="header__left--logo">E-commerce</h2>
+                </div>
+            </div>
+            <div nz-col [nzSpan]="15">
+                <div class="header__center">
+                    <input type="text" placeholder="Search" class="header__input">
+                    <button class="header__button">All categories
+                        <span nz-icon nzType="down" nzTheme="outline"></span>
+                    </button>
+                    <span nz-icon nzType="search" nzTheme="outline" class="header__search"></span>
+                </div>
+            </div>
+            <div nz-col [nzSpan]="5">
+                <div class="header__rigth">
+                    <button class="header__rigth-button">Help</button>
+                    <div class="header__account">
+                        <span nz-icon nzType="down" nzTheme="outline" class="header__account-icon"></span>
+                        <a routerLink="/login"  > <p>login</p></a>
+                    </div>
+                    <div class="header__account">
+                        <span nz-icon nzType="down" nzTheme="outline" class="header__account-icon"></span>
+                        <p>Shopping</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div nz-col [nzSpan]="16" nzOffset="4" class="navbar">
+        <div nz-row>
+            <div nz-col *ngFor="let item of product$ | async" [nzSpan]="3">
+                <div class="navbar__item">
+                   <a routerLink=""  > <h4 class="navbar__item--text">{{item.name}}</h4></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

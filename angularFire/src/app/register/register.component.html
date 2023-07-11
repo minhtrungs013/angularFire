@@ -1,0 +1,33 @@
+<div nz-row>
+    <div nz-col [nzSpan]="4" nzOffset="10" style="padding-top: 100px;">
+        <h2>Register</h2>
+        <form nz-form [formGroup]="myForm" class="login-form" (ngSubmit)="submitForm()">
+            <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your email!">
+                    <nz-input-group nzPrefixIcon="user">
+                        <input type="text" nz-input formControlName="email" placeholder="email" />
+                    </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your Password!">
+                    <nz-input-group nzPrefixIcon="lock">
+                        <input type="password" nz-input formControlName="password" placeholder="Password" />
+                    </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+            <nz-form-item>
+                <nz-form-control nzErrorTip="Please input your confirm Password!">
+                    <nz-input-group nzPrefixIcon="lock">
+                        <input type="password" nz-input formControlName="confirmPassword" placeholder="confirm Password" />
+                    </nz-input-group>
+                </nz-form-control>
+            </nz-form-item>
+           
+            <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Register</button>
+            <br/>
+            Do you already have an account
+            <a routerLink="/login">Login!</a>
+        </form>
+    </div>
+</div>
