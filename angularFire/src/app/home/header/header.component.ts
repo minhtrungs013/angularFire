@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(productService: ProductService) {
     this.product$ =productService.product$;
-    this.product$.subscribe(a => console.log(a, 'category'))
+    this.product$.subscribe()
    }
   ngOnInit(): void {
   }

@@ -6,3 +6,16 @@
 .product_item-img {
     padding-top: 10px;
 }
+
+.product_item-desc {
+    position: relative;
+}
+
+.product_item-desc-img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    right: 22px;
+    bottom: 13px;
+}
